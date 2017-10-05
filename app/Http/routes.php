@@ -38,6 +38,6 @@ Route::get('sample-restful-apis', function()
 Route::group(array('prefix' => 'api'), function() {
     //Route::resource('details',['uses' => 'APIController@create' , 'as' => 'name']);
     Route::get('ifscCode/{id}',['uses' => 'APIController@getDetails' , 'as' => 'name']);
-    Route::get('details',['uses' => 'APIController@getDetails' , 'as' => 'name']);
+    Route::get('branchDetails',['uses' => 'APIController@getDetails' , 'as' => 'name']);
     //Route::get('foo', ['uses' => 'FooController@method', 'as' => 'name']);
 });
